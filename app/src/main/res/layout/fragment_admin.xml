@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BABEBF"
+        tools:context=".ui.AdminFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/view_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Add Hotel Details"
+                android:textAllCaps="true"
+                android:textColor="#3F51B5"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:text="Name:"
+                android:textAllCaps="true"
+                android:textColor="#3F51B5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+            <EditText
+                android:id="@+id/Hotel_NameT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="62dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:hint="Enter Hotel Name"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView14"
+                app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="Location:"
+                android:textAllCaps="true"
+                android:textColor="#3F51B5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <EditText
+                android:id="@+id/hotelLo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="31dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:hint="Enter Location"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView15"
+                app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="Description:"
+                android:textAllCaps="true"
+                android:textColor="#3F51B5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+
+            <EditText
+                android:id="@+id/Hotel_DescriptionT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:hint="Hotel Desc"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView16"
+                app:layout_constraintTop_toTopOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="Status:"
+                android:textAllCaps="true"
+                android:textColor="#3F51B5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <EditText
+                android:id="@+id/Hotel_isActiveT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="49dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:hint="Active/Inactive"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView17"
+                app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="Employee:"
+                android:textAllCaps="true"
+                android:textColor="#3F51B5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <EditText
+                android:id="@+id/Hotel_EmployeeT"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edit_text_bg"
+                android:ems="10"
+                android:hint="Employee Name/ID"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/textView18"
+                app:layout_constraintTop_toTopOf="@+id/textView18" />
+
+            <ImageView
+                android:id="@+id/ivPhoto"
+                android:layout_width="230dp"
+                android:layout_height="123dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView41"
+                app:layout_constraintTop_toBottomOf="@+id/Hotel_EmployeeT" />
+
+            <Button
+                android:id="@+id/addHotelB"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_bg"
+                android:text="Add Hotel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivPhoto" />
+
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Choose IMage:"
+                android:textAllCaps="true"
+                android:textColor="#3F51B5"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ProgressBar
+            android:id="@+id/AdminHotelPB"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="266dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="20dp"
+            android:indeterminate="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

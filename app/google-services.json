@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "937352967339",
+    "project_id": "mockingbird-4bf34",
+    "storage_bucket": "mockingbird-4bf34.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937352967339:android:7a939d3c2366aee9e573ee",
+        "android_client_info": {
+          "package_name": "com.example.mockingbird"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937352967339-3jkf97omdf0lm7k03embgdb5shh2ghvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY2K1uYBgX8UbQ4J93RgJEpjQpf707PVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937352967339-3jkf97omdf0lm7k03embgdb5shh2ghvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

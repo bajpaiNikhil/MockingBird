@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.ANDSProject.ui.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_adminRecyclerViewFragment"
+            app:destination="@id/adminRecyclerViewFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_userHotelListFragment"
+            app:destination="@id/userHotelListFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_employeeFragment"
+            app:destination="@id/employeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.ANDSProject.ui.RegistrationFragment"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminRecyclerViewFragment"
+        android:name="com.example.ANDSProject.model.AdminRecyclerViewFragment"
+        android:label="fragment_admin_recycler_view"
+        tools:layout="@layout/fragment_admin_recycler_view" >
+        <action
+            android:id="@+id/action_adminRecyclerViewFragment_to_adminFragment"
+            app:destination="@id/adminFragment" />
+        <action
+            android:id="@+id/action_adminRecyclerViewFragment_to_adminHotelModifyFragment"
+            app:destination="@id/adminHotelModifyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.example.ANDSProject.ui.AdminFragment"
+        android:label="fragment_admin"
+        tools:layout="@layout/fragment_admin" >
+        <action
+            android:id="@+id/action_adminFragment_to_adminRecyclerViewFragment"
+            app:destination="@id/adminRecyclerViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminHotelModifyFragment"
+        android:name="com.example.ANDSProject.ui.AdminHotelModifyFragment"
+        android:label="fragment_admin_hotel_modify"
+        tools:layout="@layout/fragment_admin_hotel_modify" >
+        <action
+            android:id="@+id/action_adminHotelModifyFragment_to_adminAddRoomActivityFragment"
+            app:destination="@id/adminAddRoomActivityFragment" />
+        <action
+            android:id="@+id/action_adminHotelModifyFragment_to_adminRecyclerViewFragment"
+            app:destination="@id/adminRecyclerViewFragment" />
+        <action
+            android:id="@+id/action_adminHotelModifyFragment_to_viewBookingFragment"
+            app:destination="@id/viewBookingFragment" />
+        <action
+            android:id="@+id/action_adminHotelModifyFragment_to_guestListFragment"
+            app:destination="@id/guestListFragment" />
+        <action
+            android:id="@+id/action_adminHotelModifyFragment_to_viewBookingDateFragment"
+            app:destination="@id/viewBookingDateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAddRoomActivityFragment"
+        android:name="com.example.ANDSProject.ui.AdminAddRoomActivityFragment"
+        android:label="fragment_admin_add_room_activity"
+        tools:layout="@layout/fragment_admin_add_room_activity" >
+        <action
+            android:id="@+id/action_adminAddRoomActivityFragment_to_adminRoomRecyclerViewFragment"
+            app:destination="@id/adminRoomRecyclerViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminRoomRecyclerViewFragment"
+        android:name="com.example.ANDSProject.model.AdminRoomRecyclerViewFragment"
+        android:label="fragment_admin_room_recycler_view"
+        tools:layout="@layout/fragment_admin_room_recycler_view" >
+        <action
+            android:id="@+id/action_adminRoomRecyclerViewFragment_to_adminRoomModifyFragment"
+            app:destination="@id/adminRoomModifyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminRoomModifyFragment"
+        android:name="com.example.ANDSProject.ui.AdminRoomModifyFragment"
+        android:label="fragment_admin_room_modify"
+        tools:layout="@layout/fragment_admin_room_modify" >
+        <action
+            android:id="@+id/action_adminRoomModifyFragment_self"
+            app:destination="@id/adminRoomModifyFragment" />
+        <action
+            android:id="@+id/action_adminRoomModifyFragment_to_adminRoomRecyclerViewFragment"
+            app:destination="@id/adminRoomRecyclerViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userHotelListFragment"
+        android:name="com.example.ANDSProject.model.UserHotelListFragment"
+        android:label="fragment_user_hotel_list"
+        tools:layout="@layout/fragment_user_hotel_list" >
+        <action
+            android:id="@+id/action_userHotelListFragment_to_userRoomViewFragment"
+            app:destination="@id/userRoomViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userRoomViewFragment"
+        android:name="com.example.ANDSProject.model.UserRoomViewFragment"
+        android:label="UserRoomViewFragment" >
+        <action
+            android:id="@+id/action_userRoomViewFragment_to_userBookingFragment"
+            app:destination="@id/userBookingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userBookingFragment"
+        android:name="com.example.ANDSProject.model.UserBookingFragment"
+        android:label="fragment_user_booking"
+        tools:layout="@layout/fragment_user_booking" />
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="com.example.ANDSProject.model.EmployeeFragment"
+        android:label="fragment_employee"
+        tools:layout="@layout/fragment_employee" >
+        <action
+            android:id="@+id/action_employeeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/hotelDialog"
+        android:name="com.example.ANDSProject.model.HotelDialog"
+        android:label="HotelDialog" >
+        <action
+            android:id="@+id/action_hotelDialog_to_userHotelListFragment"
+            app:destination="@id/userHotelListFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/viewBookingFragment"
+        android:name="com.example.ANDSProject.model.ViewBookingFragment"
+        android:label="ViewBookingFragment" />
+    <fragment
+        android:id="@+id/guestListFragment"
+        android:name="com.example.ANDSProject.model.GuestListFragment"
+        android:label="fragment_guest_list"
+        tools:layout="@layout/fragment_guest_list" />
+    <fragment
+        android:id="@+id/viewBookingDateFragment"
+        android:name="com.example.ANDSProject.model.ViewBookingDateFragment"
+        android:label="fragment_view_booking_date"
+        tools:layout="@layout/fragment_view_booking_date" />
+</navigation>

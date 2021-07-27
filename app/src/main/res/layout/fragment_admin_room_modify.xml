@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BABEBF"
+    tools:context=".ui.AdminRoomModifyFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/view_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Update Room Details"
+            android:textAllCaps="true"
+            android:textColor="#3F51B5"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Type:"
+            android:textAllCaps="true"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <EditText
+            android:id="@+id/RoomtypeA"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="AC/Non-AC"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textView9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="sans-serif"
+            android:text="Discount:"
+            android:textAllCaps="true"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <EditText
+            android:id="@+id/RoomdisA"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="Enter Discount"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Cost:"
+            android:textAllCaps="true"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <EditText
+            android:id="@+id/RoomcostA"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:hint="Enter Cost"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/textView20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+        <Button
+            android:id="@+id/updateB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg"
+            android:text="update room"
+            app:layout_constraintEnd_toStartOf="@+id/deleteB"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RoomcostA" />
+
+        <Button
+            android:id="@+id/deleteB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="Delete Room"
+            app:layout_constraintBottom_toBottomOf="@+id/updateB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/updateB"
+            app:layout_constraintTop_toTopOf="@+id/updateB" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

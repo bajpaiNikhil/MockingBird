@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BABEBF"
+    tools:context=".model.UserBookingFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/view_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <nl.dionsegijn.konfetti.KonfettiView
+            android:id="@+id/viewKonfetti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+        </nl.dionsegijn.konfetti.KonfettiView>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Booking Details"
+            android:textAllCaps="true"
+            android:textColor="#3F51B5"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Room Title"
+            android:textAllCaps="true"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <TextView
+            android:id="@+id/RTtextView"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:text="ROOM TITLE"
+            android:textColor="#000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView22"
+            app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:text="Discount"
+            android:textAllCaps="true"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/RDtextView"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:text="DISCOUNT"
+            android:textColor="#000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView24"
+            app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:text="Room Cost"
+            android:textAllCaps="true"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <TextView
+            android:id="@+id/RCtextView"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:text="ROOM COST"
+            android:textColor="#000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView26"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView26"
+            app:layout_constraintTop_toTopOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:text="Status"
+            android:textAllCaps="true"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+        <TextView
+            android:id="@+id/RAtextView"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:text="SATATUS"
+            android:textColor="#000"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView28"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView28"
+            app:layout_constraintTop_toTopOf="@+id/textView28" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:text="Room Count"
+            android:textAllCaps="true"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+        <EditText
+            android:id="@+id/EnterRNtextView"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="2"
+            android:hint="Enter Room Count"
+            android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:textColor="#000"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView30"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView30"
+            app:layout_constraintTop_toTopOf="@+id/textView30" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:text="Date"
+            android:textAllCaps="true"
+            android:textColor="#3F51B5"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <EditText
+            android:id="@+id/dateE"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/edit_text_bg"
+            android:ems="10"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView31"
+            app:layout_constraintEnd_toStartOf="@+id/dateIV"
+            app:layout_constraintStart_toEndOf="@+id/textView31"
+            app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+        <ImageView
+            android:id="@+id/dateIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/dateE"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+        <Button
+            android:id="@+id/checkButtonB"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:text="Check"
+            app:layout_constraintStart_toStartOf="@+id/textView31"
+            app:layout_constraintTop_toBottomOf="@+id/dateE" />
+
+        <Button
+            android:id="@+id/bookButtonB"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/button_bg"
+            android:text="Book"
+            app:layout_constraintBottom_toBottomOf="@+id/checkButtonB"
+            app:layout_constraintStart_toEndOf="@+id/checkButtonB"
+            app:layout_constraintTop_toTopOf="@+id/checkButtonB" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
