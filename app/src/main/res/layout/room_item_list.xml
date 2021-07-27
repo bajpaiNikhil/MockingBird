@@ -27,54 +27,82 @@
             android:id="@+id/Room_typeE"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginEnd="8dp"
             android:text="ROOM TYPE"
-            android:textAlignment="viewStart"
+            android:textAlignment="textEnd"
             android:textAllCaps="true"
             android:textColor="#000"
             android:textSize="20sp"
-            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView42"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/adminRoomimage"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/textView42" />
 
         <TextView
             android:id="@+id/Room_disE"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
             android:layout_marginEnd="10dp"
             android:text="ROOM DISCOUNT"
-            android:textAlignment="viewStart"
+            android:textAlignment="textEnd"
             android:textAllCaps="true"
             android:textColor="#000"
             android:textSize="20sp"
-            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView43"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/adminRoomimage"
-            app:layout_constraintTop_toBottomOf="@+id/Room_typeE" />
+            app:layout_constraintTop_toTopOf="@+id/textView43" />
 
         <TextView
             android:id="@+id/Room_costE"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
             android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
             android:text="ROOM TERIFF"
-            android:textAlignment="viewStart"
+            android:textAlignment="textEnd"
             android:textAllCaps="true"
             android:textColor="#000"
             android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView44"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView44" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:text="Room Type-"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/adminRoomimage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Room Discount-"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/adminRoomimage"
+            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:text="Room Cost-"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/adminRoomimage"
-            app:layout_constraintTop_toBottomOf="@+id/Room_disE" />
+            app:layout_constraintTop_toBottomOf="@+id/textView43" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

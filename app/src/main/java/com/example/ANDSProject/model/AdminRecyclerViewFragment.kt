@@ -109,7 +109,7 @@ class AdminRecyclerViewFragment : Fragment() {
             override fun onDataChange(snapshot: DataSnapshot) {
 
                 if (snapshot.exists()) {
-
+                    hotelArrayList.clear()
                     for (hotelSnapshot in snapshot.children) {
 
                         val hotel = hotelSnapshot.getValue(Hotel_Details::class.java)

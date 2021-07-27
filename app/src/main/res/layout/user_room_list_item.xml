@@ -26,54 +26,91 @@
             android:id="@+id/UserRoomE"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="10dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="24dp"
             android:text="ROOM TYPE"
             android:textAlignment="viewStart"
             android:textAllCaps="true"
             android:textColor="#000"
             android:textSize="20sp"
-            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView42"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/UserRoomImage"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView42"
+            app:layout_constraintTop_toTopOf="@+id/textView42"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/UserRoomDisE"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
             android:layout_marginEnd="10dp"
             android:text="ROOM COUNT"
             android:textAlignment="viewStart"
             android:textAllCaps="true"
             android:textColor="#000"
             android:textSize="20sp"
-            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/textView43"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/UserRoomImage"
-            app:layout_constraintTop_toBottomOf="@+id/UserRoomE" />
+            app:layout_constraintTop_toTopOf="@+id/textView43"
+            app:layout_constraintVertical_bias="0.333" />
 
         <TextView
             android:id="@+id/UserRoomCostE"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginEnd="12dp"
             android:text="ROOM TERIFF"
             android:textAlignment="viewStart"
             android:textAllCaps="true"
             android:textColor="#000"
             android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView44"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView44"
+            app:layout_constraintTop_toTopOf="@+id/textView44"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:text="Room Type-"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/UserRoomImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Room Discount-"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/UserRoomImage"
+            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:text="Room Cost-"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/UserRoomImage"
-            app:layout_constraintTop_toBottomOf="@+id/UserRoomDisE" />
+            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

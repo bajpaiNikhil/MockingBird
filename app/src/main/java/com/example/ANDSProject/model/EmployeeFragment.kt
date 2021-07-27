@@ -75,7 +75,6 @@ class EmployeeFragment : Fragment() {
                             empHS.text = employee.Hotel_isActive
                             empName.text = employee.Hotel_Employee
                             break
-
                         }
                     }
                 }

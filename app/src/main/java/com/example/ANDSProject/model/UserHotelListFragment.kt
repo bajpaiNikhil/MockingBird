@@ -102,14 +102,11 @@ class UserHotelListFragment : Fragment() {
 
                         val hotel = hotelSnapshot.getValue(User_Hotel_Details::class.java)
 
-//                       Log.d("UserActivity" , "Hotel is is ${hotel?.hotel_ID} , ${newTextInSearchBar}")
                         Log.d("userActivity" , "hotel name is ${hotel?.hotel_ID} , ${newTextInSearchBar} ")
 
                         if("${hotel?.hotel_ID}".contains(newTextInSearchBar)){
-                            Log.d("Iamstupid" , " REached till here Text is . $newTextInSearchBar")
                             searchHotelArrayList.add(hotel!!)
-                            //UserHotelArrayList.add(hotel!!)
-                            Log.d("Iamstupid" , " REached till here True searchHotelArrayList , $searchHotelArrayList")
+
                         }
 
                         UserHotelArrayList.add(hotel!!)

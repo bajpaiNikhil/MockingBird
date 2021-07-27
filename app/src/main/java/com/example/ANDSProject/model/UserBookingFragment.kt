@@ -114,7 +114,7 @@ class UserBookingFragment : Fragment(), DatePickerDialog.OnDateSetListener {
                 val dlg = HotelDialog()
                 val b =  Bundle()
                 b.putString("title", "Room Avalability! ")
-                b.putString("msg" , "We have Entered  number of rooms")
+                b.putString("msg" , "Proceed for booking.")
                 b.putInt("type" , 2)
                 dlg.arguments = b
                 dlg.show((activity as FragmentActivity).supportFragmentManager,"2")
@@ -124,7 +124,7 @@ class UserBookingFragment : Fragment(), DatePickerDialog.OnDateSetListener {
                 val dlg = HotelDialog()
                 val b =  Bundle()
                 b.putString("title", "Room Avalability! ")
-                b.putString("msg" , "We dont have Entered  number of rooms")
+                b.putString("msg" , "Can't process your request.")
                 b.putInt("type" , 2)
                 dlg.arguments = b
                 dlg.show((activity as FragmentActivity).supportFragmentManager,"2")
@@ -186,12 +186,11 @@ class UserBookingFragment : Fragment(), DatePickerDialog.OnDateSetListener {
                 if(snapshot.exists()){
                     for(user in snapshot.children){
                         val detail_user = user.getValue(findUserdetails::class.java)
-                        Log.d("IamStupid" , "reached till  ${detail_user?.emailR} , ${auth.currentUser?.email}")
                         if(detail_user?.emailR?.lowercase() == auth.currentUser?.email){
+
                             userUsername = "${detail_user?.usernameR}"
-                            Log.d("IamStupid" , "reached till hereUserName ${userUsername}")
+
                             userPhoneNumber = "${detail_user?.phoneNumberR}"
-                            Log.d("IamStupid" , "reached till hereUserName ${userPhoneNumber}")
                             addOrderDetails()
                             break
                         }
@@ -212,10 +211,6 @@ class UserBookingFragment : Fragment(), DatePickerDialog.OnDateSetListener {
         val UserName_id = userUsername
         val PhoneNumber = userPhoneNumber
         val OrderValue = (rcost.text.toString().toInt())*(enterCount.text.toString().toInt())
-        Log.d("IamStupidity" , "reached till hereUserNameiii ${userUsername}")
-        Log.d("IamStupidity" , "reached till hereUserNameiii ${userPhoneNumber}")
-        Log.d("IamStupidity" , "reached till hereUserNamei ${UserName_id}")
-        Log.d("IamStupidity" , "reached till hereUserNamei ${PhoneNumber}")
 
         val primaryKeyOrderDetail = "$Hotel_id+${auth.currentUser?.email!!.replace("@","").replace(".","")}+$Room_id"
 

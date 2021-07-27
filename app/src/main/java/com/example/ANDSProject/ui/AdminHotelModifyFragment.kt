@@ -31,7 +31,7 @@ class AdminHotelModifyFragment : Fragment(), DatePickerDialog.OnDateSetListener 
     lateinit var viewGuestList:Button
     lateinit var viewGuestDate:Button
     lateinit var dateTextView  : TextView
-    lateinit var viewBookingDateT:ImageView
+    lateinit var viewBookingDateT : ImageView
 
     lateinit var HotelPK : String
 
@@ -92,6 +92,7 @@ class AdminHotelModifyFragment : Fragment(), DatePickerDialog.OnDateSetListener 
             val b = bundleOf("Hotel_ID" to HotelPK)
             findNavController().navigate(R.id.action_adminHotelModifyFragment_to_adminAddRoomActivityFragment,b)
         }
+
         updateHotel.setOnClickListener {
             val ref = FirebaseDatabase.getInstance().getReference("Application_Database").child("Hotel_Details").child(HotelPK)
             ref.child("hotel_Description").setValue(HdescE.text.toString())
@@ -100,10 +101,12 @@ class AdminHotelModifyFragment : Fragment(), DatePickerDialog.OnDateSetListener 
             ref.child("hotel_isActive").setValue(HisAcitive.text.toString())
             findNavController().navigate(R.id.action_adminHotelModifyFragment_to_adminRecyclerViewFragment)
         }
+
         viewBookingButton.setOnClickListener{
             val b = bundleOf("Hotel_ID" to HotelPK)
             findNavController().navigate(R.id.action_adminHotelModifyFragment_to_viewBookingFragment, b)
         }
+
         viewGuestList.setOnClickListener{
             val b = bundleOf("Hotel_ID" to HotelPK)
             findNavController().navigate(R.id.action_adminHotelModifyFragment_to_guestListFragment, b)
@@ -111,10 +114,9 @@ class AdminHotelModifyFragment : Fragment(), DatePickerDialog.OnDateSetListener 
 
         viewBookingDateT.setOnClickListener{
             val dlg = HotelDialog()
-            dlg.setTargetFragment(requireParentFragment(),0)
+            dlg.setTargetFragment(this,0)
             val b = Bundle()
             b.putInt("type" , 1)
-
             dlg.arguments = b
             fragmentManager?.let { it1 -> dlg.show(it1, "1") }
         }

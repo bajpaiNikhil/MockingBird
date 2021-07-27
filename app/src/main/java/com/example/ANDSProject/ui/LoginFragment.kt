@@ -12,7 +12,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.ANDSProject.R
 import com.google.firebase.auth.FirebaseAuth
 
-class LoginFragment : Fragment(){
+class LoginFragment : Fragment() {
 
     lateinit var auth : FirebaseAuth
     lateinit var emailL: EditText

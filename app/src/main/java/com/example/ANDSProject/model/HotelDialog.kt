@@ -62,7 +62,6 @@ class HotelDialog : DialogFragment(){
             }
 
             3 ->{
-                //do somethings for pop up dialog
 
                 builder.setTitle(mytitle)
                 builder.setMessage(message)
